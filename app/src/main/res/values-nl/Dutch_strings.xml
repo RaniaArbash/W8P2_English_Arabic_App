@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Canada">Canada</string>
+    <string name="argentina">Argentinië</string>
+    <string name="English">Engels</string>
+    <string name="Arabic">Arabisch</string>
+    <string name="app_name">week 5</string>
+    <string name="alert_mes">alert_mes</string>
+    <string name="Germany">Duitsland</string>
+    <string name="China">China</string>
+    <string name="Egyte">een</string>
+    <string name="Spain">Spanje</string>
+    <string name="EuropeanUnion">Europeese Unie</string>
+    <string name="France">Frankrijk</string>
+    <string name="England">Engeland</string>
+    <string name="Italy">Italië</string>
+    <string name="Brazil">Brazilië</string>
+</resources>

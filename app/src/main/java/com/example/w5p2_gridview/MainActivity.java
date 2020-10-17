@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.GridView;
 import android.widget.Toast;
 
@@ -37,6 +38,21 @@ public class MainActivity extends AppCompatActivity {
                 getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
                 Toast.makeText(getApplicationContext(), "Arabic", Toast.LENGTH_SHORT).show();
                 language = 2;//app language is Arabic
+
+                finish();
+                startActivity(getIntent());
+
+            }
+            else { // languate == 1
+                Locale locale = new Locale("en");
+                Locale.setDefault(locale);
+
+                Configuration config = new Configuration();
+                config.locale = locale;
+
+                getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+                Toast.makeText(getApplicationContext(), "English", Toast.LENGTH_SHORT).show();
+                language = 1;//app language is Arabic
 
                 finish();
                 startActivity(getIntent());
@@ -126,5 +142,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("lang",language);
+    }
+
+    public void changeToDutch(View view) {
+        Locale locale = new Locale("nl");
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+
+        language = 3;// App language is English
+        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        Toast.makeText(getApplicationContext(), "Dutch", Toast.LENGTH_SHORT).show();
+        finish();
+        startActivity(getIntent());
+
     }
 }
