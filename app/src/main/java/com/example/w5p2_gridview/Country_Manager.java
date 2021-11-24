@@ -8,8 +8,9 @@ public class Country_Manager {
     ArrayList countryList=new ArrayList<>();
 
     Country_Manager(){
-      countryList.add(new Country(R.drawable.ar,R.string.argentina));
-       countryList.add(new Country(R.drawable.br,R.string.Brazil));
+
+        countryList.add(new Country(R.drawable.ar,R.string.argentina));
+        countryList.add(new Country(R.drawable.br,R.string.Brazil));
         countryList.add(new Country(R.drawable.ca,R.string.Canada));
         countryList.add(new Country(R.drawable.cn,R.string.China));
         countryList.add(new Country(R.drawable.de,R.string.Germany));
@@ -21,4 +22,7 @@ public class Country_Manager {
         countryList.add(new Country(R.drawable.it,R.string.Italy));
 
 }
+
+//
+     // here we have to query the db for all flags.
 }

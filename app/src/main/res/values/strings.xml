@@ -8,11 +8,10 @@
     <string name="China">China</string>
     <string name="Egyte">Egyte</string>
     <string name="Spain">Spain</string>
-    <string name="argentina">argentina</string>
+    <string name="argentina">Argentina</string>
     <string name="EuropeanUnion">European Union</string>
     <string name="France">France</string>
     <string name="England">England</string>
     <string name="Italy">Italy</string>
     <string name="Brazil">Brazil</string>
-
 </resources>

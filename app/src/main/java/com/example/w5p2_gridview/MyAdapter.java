@@ -47,8 +47,11 @@ public class MyAdapter extends BaseAdapter {
             TextView textView = (TextView) v.findViewById(R.id.textView);
             ImageView imageView = (ImageView) v.findViewById(R.id.imageView);
 
+
             textView.setText(((Country)(countryList.get(position))).getName());
             imageView.setImageResource(((Country)(countryList.get(position))).getImage());
+
+
             return v;
 
         }
